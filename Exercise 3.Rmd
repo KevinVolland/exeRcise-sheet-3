@@ -19,5 +19,10 @@ Strengths of github: 1. You can track your progress over time, and recover lost 
 Weaknesses of github: 1. It can be hard and confusing to use at first
                       2. It cannot handle larger files or data
   
+### Exercise 1e)
+
+```{r}
+
+```
 
 
