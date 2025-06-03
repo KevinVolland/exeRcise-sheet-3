@@ -1,0 +1,23 @@
+---
+title: "Exercise #3"
+author: "Philipp Adami (12617871)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercise 1
+
+### Exercise 1d)
+
+
+Strengths of github: 1. You can track your progress over time, and recover lost files if needed
+                     2. Great for group projects / collaborations, since everyone can track everyone's progress
+Weaknesses of github: 1. It can be hard and confusing to use at first
+                      2. It cannot handle larger files or data
+  
+
+
