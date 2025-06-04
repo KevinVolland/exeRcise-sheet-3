@@ -32,8 +32,18 @@ pixar_films <- read_csv("pixar_films.csv")
 
 ```{r}
 pixar_films <- pixar_films %>% filter(!is.na(film))
+
+pixar_films$film_rating <- as.factor(pixar_films$film_rating)
+
 ```
 
 The variable "film_rating" maybe categorizes the age-restriction for the film, meaning a "G"-rated movie is good to watch as a kid, while "PG"-rated is not recommended for kids to watch alone (PG may stand for "Parental Guide", while may stand for "General").
+It is appropriate to have "film_rating" as a factor variable, since there are only limited (PG and G, maybe a few more) categorical possibilities for entries (so discrete categories).
+
+
+
+
+
+
 
 
