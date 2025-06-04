@@ -14,15 +14,26 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Exercise 1d)
 
 
-Strengths of github: 1. You can track your progress over time, and recover lost files if needed
-                     2. Great for group projects / collaborations, since everyone can track everyone's progress
-Weaknesses of github: 1. It can be hard and confusing to use at first
-                      2. It cannot handle larger files or data
+Strengths of github: 1. You can track your progress over time, and recover lost files if needed.
+                     2. Great for group projects / collaborations, since everyone can track everyone's progress.
+Weaknesses of github: 1. It can be hard and confusing to use at first.
+                      2. It cannot handle larger files or data.
   
-### Exercise 1e)
+
+## Exercise 3
+
+### Exercise 3a)
 
 ```{r}
-
+library(tidyverse)
+library(readr)
+pixar_films <- read_csv("pixar_films.csv")
 ```
+
+```{r}
+pixar_films <- pixar_films %>% filter(!is.na(film))
+```
+
+The variable "film_rating" maybe categorizes the age-restriction for the film, meaning a "G"-rated movie is good to watch as a kid, while "PG"-rated is not recommended for kids to watch alone (PG may stand for "Parental Guide", while may stand for "General").
 
 
