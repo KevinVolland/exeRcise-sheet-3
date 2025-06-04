@@ -48,9 +48,27 @@ pixar_series <- data.frame(
   series_name = c("Toy Story", "Cars", "Incredibles", "Finding Nemo"),
   nr_of_movies = c(4, 3, 2, 2)
 )
+
+write.csv(pixar_series, "pixar_series.csv", row.names = FALSE)
+
 ```
 
 
+### Exercise 3c) 
+
+```{r}
+public_response <- read_csv("public_response.csv")
+
+public_response$cinema_score <- as.factor(public_response$cinema_score)
+
+public_response$cinema_score <- factor(public_response$cinema_score,
+                                       levels = c("A-", "A", "A+"))
+
+```
+
+```{r}
+pixar_newfilms <- merge()
+```
 
 
 
