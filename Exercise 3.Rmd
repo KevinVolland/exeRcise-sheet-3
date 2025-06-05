@@ -45,10 +45,12 @@ It is appropriate to have "film_rating" as a factor variable, since there are on
 
 ```{r}
 pixar_series <- data.frame(
-  series_name = c("Toy Story", "Cars", "Incredibles", "Finding Nemo"),
-  nr_of_movies = c(4, 3, 2, 2)
+  series_name = c("Toy Story", "Toy Story", "Toy Story", "Toy Story", "Cars", "Cars", "Cars", "Incredibles", "Incredibles", "Finding", "Finding "),
+  film = c("Toy Story", "Toy Story 2", "Toy Story 3", "Toy Story 4", "Cars", "Cars 2", "Cars 3", "The Incredibles", "Incredibles 2", "Finding Nemo", "Finding Dory"),
+  nr_of_movies = c(4, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2)
 )
 
+view(pixar_series)
 write.csv(pixar_series, "pixar_series.csv", row.names = FALSE)
 
 ```
@@ -67,9 +69,29 @@ public_response$cinema_score <- factor(public_response$cinema_score,
 ```
 
 ```{r}
-pixar_newfilms <- merge()
+pixar_newfilms <- left_join(pixar_films, public_response, by = "film")
 ```
 
+### Aufgabe 3d)
+
+
+```{r}
+pixar_helpdf <- left_join(pixar_series, public_response, by = "film")
+```
+A help-dataframe to help me with the following plot.
+
+```{r}
+ggplot(
+  data = pixar_helpdf,
+  mapping = aes(
+    x = film,
+    y = metacritic
+  )
+) + geom_col()
+
+
+
+```
 
 
 
