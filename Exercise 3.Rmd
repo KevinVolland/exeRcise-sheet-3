@@ -85,13 +85,32 @@ ggplot(
   data = pixar_helpdf,
   mapping = aes(
     x = film,
-    y = metacritic
+    y = metacritic,
+    
+    
   )
-) + geom_col()
-
-
-
+) + geom_col() + 
+  labs(
+    x = "Filmtitle",
+    y = "Moviescore by metacritic",
+    title = "Moviescore of Pixar-filmseries"
+  )
 ```
+
+I'm noticing that the first movie of a series is always rated the best, and the later the movie in the series, the worse it gets percieved by critics.
+
+## Exercise 4 
+
+### Exercise 4a+b+c)
+
+```{r}
+alcohol <- read_csv("Alcohol consumption since 1890 (Alexander & Holmes, 2017).csv")
+```
+
+Dataset Name: Alcohol consumption since 1890 (Alexander & Holmes, 2017)
+Link: https://github.com/owid/owid-datasets/tree/master/datasets/Alcohol%20consumption%20by%20type%20since%201890%20(Alexander%20%26%20Holmes%2C%202017)
+
+
 
 
 
