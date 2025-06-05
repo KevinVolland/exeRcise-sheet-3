@@ -110,6 +110,10 @@ alcohol <- read_csv("Alcohol consumption since 1890 (Alexander & Holmes, 2017).c
 Dataset Name: Alcohol consumption since 1890 (Alexander & Holmes, 2017)
 Link: https://github.com/owid/owid-datasets/tree/master/datasets/Alcohol%20consumption%20by%20type%20since%201890%20(Alexander%20%26%20Holmes%2C%202017)
 
+### Exercise 4d)
+
+My scientific question is: How did alcohol-consume change over the last 60 years? (To be concrete, how did it change from 1960 to 2014 in the given countries)
+This is an interesting question, since society has changed dramatically in the last 60 years, so it's interesting to see how one of the most popular addictions have changed along the way.
 
 
 
