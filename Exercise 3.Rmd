@@ -128,3 +128,20 @@ alcohol %>% group_by(Entity) %>% summarize(Alcohol_consumtion = mean(`Alcohol co
 In the first table, you can see the development of alcohol consumption in the years 1890, 1920, 1960, 1970, 1980, 1999, 2000 and 2014, and you can clearly see that the average consumption per year has been going down.This is probably due to the fact that population has grown, so the average per capita alcohol consumption has shrunk. 
 
 In the second plot, you can see the average alcohol consumption per capita in select high-income countries. The highest consumption is from France, with 14.5 liters per capita, while the lowest are Japan and Finland with only 5.8 and 5.1 liters per capita.
+
+
+### Exercise 4f)
+
+```{r, fig.cap = "Alcohol consumption per capita in some years from 1890 to 2014"}
+ggplot(
+  data = alcohol,
+  mapping  = aes(
+    x = Year,
+    y = `Alcohol consumption since 1890 (Alexander & Holmes, 2017)`
+  )
+) + geom_col()
+
+```
+
+
+
